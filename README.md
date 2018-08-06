@@ -8,7 +8,7 @@ http://sotd.us/randywilley/CEN1400/project/module06/index.html
 
 ### Site Map
 
-XXX
+https://github.com/rwilley66/CEN1400_Course_Project/blob/master/Site%20Map.png
 
 ### Site Action/Event Descriptions
 
