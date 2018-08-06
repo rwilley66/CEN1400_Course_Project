@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Favorite Movies - Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1
+    <!-- <link rel="stylesheet" href="css/cen1400.css" /> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/themes/cen1400_project.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+    <div class="ui-grid-a ui-responsive">
+        <div class="cui-block-a">
+            <img src="img/movie-reel.png" class="w3-image" width="350" height="197">
+        </div>
+        <div class="cui-block-b">
+            <img src="img/header.png" class="w3-image" width="1200" height="197">
+        </div>
+    </div>
+
+    <div data-role="header">
+        <nav>
+            <ul id="fm_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<div data-role="main" class="ui-content">
+    <input type="text" id="testInput" autofocus>
+    <input type="button" value="Save" id="save">
+    <input type="button" value="Show" id="show">
+    <p id="theText"></p>
+</div>
+
+    <div data-role="footer">
+        <p><center><nav><a href="#">Home</a> • <a href="movies.html">Movies</a> • <a href="contact.html">Contact</a></nav></center></p>
+        <p><center>&copy; 2018 Randy Willey&nbsp;&nbsp;•&nbsp;&nbsp;randy.willey@smail.rasmussen.edu</center></p>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#save").click(function() {
+            if ($("#testInput").val() !== "") {
+                localStorage.setItem("var1", $("#testInput").val());
+                alert("Information saved!");
+            }
+        });
+
+        $("#show").click(function() {
+            $("#theText").html(localStorage.getItem("var1"));
+        });
+    });
+</script>
+
+
+</html>
