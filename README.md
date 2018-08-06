@@ -12,4 +12,4 @@ https://github.com/rwilley66/CEN1400_Course_Project/blob/master/Site%20Map.png
 
 ### Site Action/Event Descriptions
 
-XXX
+https://github.com/rwilley66/CEN1400_Course_Project/blob/master/Site%20Action_Event%20Descriptions.pdf
